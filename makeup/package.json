@@ -1,0 +1,33 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cheerio": "^0.6.3",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-less": "^3.5.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-replace": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svg-sprite": "^1.4.0",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-tinypng": "^1.0.2",
+    "pug": "^2.0.3",
+    "smart-grid": "^2.1.1"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.0.1"
+  },
+  "description": ""
+}

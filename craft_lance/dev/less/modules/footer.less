@@ -1,0 +1,92 @@
+.footer{
+  background-color: #efefef;
+
+  &__top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 70px;
+  }
+
+  &__newsletter,
+  .menu{
+    margin-bottom: 30px;
+  }
+
+  &__newsletter{
+    flex-basis: 40%;
+
+    .container{
+      max-width: 330px;
+    }
+
+    .form{
+
+      &__input{
+        padding-left: .75rem;
+        
+        font-size: .75rem;
+        line-height: 2.8125rem;
+
+        border: none;
+      }
+
+      &__btn {
+        width: 16%;
+        background-color: @green;
+        font-size: 1.375rem;
+      }
+    }
+  }
+
+  &__text{
+    margin-bottom: 25px;
+
+    font-family: @rl;
+    font-size: .75rem;
+    line-height: 1.5rem;
+  }
+
+  &__bottom{
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .logo{
+    align-self: center;
+    a{
+      font-size: 1.25rem;
+    }
+  }
+  .copyright{
+    font-family: @rl;
+    font-size: .6875rem;
+    line-height: 1.0625rem;
+    text-align: right;
+  }
+
+  .menu{
+    flex-basis: 20%;
+    min-width: 200px;
+
+    &__header{
+      display: block;
+      margin-bottom: 35px;
+
+      font-family: @rr;
+      font-size: 1rem;
+      text-transform: capitalize;
+      color: #010101;
+    }
+
+    &__href{
+      font-family: @rl;
+      font-size: .8125rem;
+      text-transform: uppercase;
+      line-height: 1.875rem;
+      color: @dark;
+    }
+  }
+}

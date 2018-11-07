@@ -1,0 +1,25 @@
+include ../mixins
+block vars
+
+doctype html
+html(lang="ru-RU")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv='X-UA-Compatible', content="IE = edge")
+    meta(name="viewport" content="width=device-width,initial-scale=1")
+    meta(name="keywords" content="")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css")
+    link(rel="stylesheet" type='text/css' href="css/main.css")
+    script(
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
+    title #{title}
+  body
+    include ../modules/header
+    block content
+    include ../modules/footer
+
+    script(src="scripts/main.js")

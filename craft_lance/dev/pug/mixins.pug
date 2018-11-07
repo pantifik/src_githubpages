@@ -1,0 +1,14 @@
+mixin item(imgClass)
+  .item
+    i.item__img(class = imgClass)
+    h4.item__header Community Edition
+    p.item__desc Visually explore your data through a free-form drag-and-drop canvas,
+      |a broad range of modern data visualizations, and an easy-to-use report authoring experience.
+
+mixin menu(header, items)
+  .menu
+    span.menu__header #{header}
+    ul.menu__list
+      each val in items
+        li.menu__item
+          a.menu__href(href='javascript:void(0);') #{val}

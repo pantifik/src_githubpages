@@ -1,0 +1,55 @@
+/***** begin contacts *****/
+.contacts{
+
+  &__content{
+    .row-flex();
+  }
+
+  &__item{
+    .col();
+    .size(3);
+    .size-md(6);
+    .size-sm(12);
+
+    .md(margin-bottom, 50px);
+    .sm(margin-bottom, 20px);
+
+    display: flex;
+
+    .icon{
+      fill: #0d3e7e;
+      fill-rule: evenodd;
+      opacity: 0.7;
+      max-height: 50px;
+      max-width: 50px;
+    }
+  }
+
+  &__box{
+    margin-left: 20px;
+  }
+
+  &__title{
+    font-family: @osBold;
+    font-size: 16px;
+  }
+
+  &__text{
+    margin: 5px 0;
+    font-family: @osReg;
+    font-size: 14px;
+
+    &-small{
+      font-size: 12px;
+    }
+  }
+
+  a{
+    color: inherit;
+  }
+
+  &__phone{
+    text-decoration: none;
+  }
+}
+/***** end contacts *****/

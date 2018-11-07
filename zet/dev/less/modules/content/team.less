@@ -1,0 +1,81 @@
+// begin team
+.team{
+  position: relative;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  text-align: center;
+
+  &__content{
+    display: flex;
+    padding: 0 -15px;
+    margin-bottom: 140px;
+
+    .media(950px, {
+      flex-wrap: wrap;
+      justify-content: center;
+    });
+
+    .media(400px, {
+      margin-bottom: 70px;
+    });
+
+  }
+}
+
+.member{
+  flex-basis: ~"calc(25% - 30px)";
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+
+  max-width: 270px;
+
+  font-family: @motReg;
+  font-size: 14px;
+  text-align: center;
+
+  background-color: rgba(242,242,242, .75);
+
+  .media(950px, {
+    flex-basis: 50%;
+  });
+  .media(500px, {
+    flex-basis: 100%;
+  });
+
+  &__photo{
+    height: 270px;
+
+    margin-bottom: 30px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  &__about{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 10px;
+  }
+
+  &__name{
+    font-family: @motBold;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  &__prof{
+    margin-bottom: 20px;
+  }
+
+  &__social{
+    margin-top: auto;
+    margin-bottom: 30px;
+  }
+}
+// end team

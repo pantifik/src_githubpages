@@ -1,0 +1,66 @@
+/***** begin reason *****/
+.reason{
+  position: relative;
+  background-color: #f2e8e8;
+  padding-bottom: 150px;
+  .media(@break_xs,{
+    padding-bottom: 30px;
+  });
+
+  .media(1500px,{
+    padding-bottom: 50px;
+  });
+
+  &:after{
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(120%);
+    display: block;
+    width: 800px;
+    height: 300px;
+    background-image: url(../img/content/reasonBg__bottom.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+
+    .media(1000px, { display: none;
+    });
+  }
+
+  .wrapper{
+    position: relative;
+    z-index: 50;
+  }
+
+  .section{
+    &__content{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 80px;
+      .media(@break_xs,{
+        margin-bottom: 30px;
+      });
+    }
+  }
+
+  &__bgImg{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-110%);
+    width: 903px;
+    height: 715px;
+    background-image: url(../img/content/reason__wom.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    .media(1500px,{ display: none;
+    })
+  }
+}
+/***** end reason *****/

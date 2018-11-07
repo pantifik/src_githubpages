@@ -1,0 +1,167 @@
+.section{
+  .wrapper{
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+    text-align: center;
+    
+  }
+
+  &__header{
+    max-width: 815px;
+
+    margin: 0 auto;
+
+    font-family: @rl;
+    font-size: 3rem;
+    line-height: 3.75rem;
+    color: #000000;
+  }
+
+  &__desc{
+    max-width: 775px;
+    margin: 0 auto;
+    padding: 10px 0;
+
+    font-family: @rl;
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+}
+
+.form {
+  font-family: @rl;
+
+  &__container{
+    display: flex;
+
+    overflow: hidden;
+  }
+
+  &__input {
+    flex: 1 1 auto;
+
+    border: none;
+
+    &::placeholder {
+      color: #cccccc;
+      font-style: italic;
+    }
+  }
+
+  &__btn {
+    color: @whiteFont;
+
+    border: none;
+
+    cursor: pointer;
+  }
+}
+
+.card{
+  width: 100%;
+  padding: 70px 0;
+  margin-bottom: 70px;
+
+  box-shadow: 0 0 10px @dark;
+
+  background-color: @white;
+
+  &__list{
+    margin-left: 30px;
+
+    h2{
+      margin-bottom: 20px;
+
+      text-align: left;
+      font-family: @rl;
+      font-size: 1.625rem;
+      line-height: 1.25rem;
+      color: @green;
+    }
+  }
+}
+
+.item{
+  flex-basis: calc(~"25% - 30px");
+  margin: 15px;
+  padding: 35px 15px 60px 15px;
+
+  box-shadow: 0 0 5px @dark;
+
+  background-color: @white;
+
+  transition: 350ms;
+
+  &:hover{
+    background-color: @green;
+    color: @whiteFont;
+    .item__img{
+      color: @whiteFont;
+    }
+  }
+
+  &__img{
+    margin-bottom: 20px;
+
+    font-size: 3.75rem;
+    color: @green;
+
+    &:after{
+      content: '';
+
+      display: block;
+      margin-top: 20px;
+      height: 2px;
+      background-color: #ececec;
+    }
+  }
+
+  &__header{
+    margin-bottom: 35px;
+    text-transform: uppercase;
+  }
+
+  &__desc{
+    font-family: @rl;
+    font-size: .75rem;
+    line-height: 1.375rem;
+  }
+}
+
+.switcher{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  font-family: @rr;
+  font-size: .75rem;
+  line-height: 1.875rem;
+
+  border-radius: 0.9375rem;
+  border: 1px solid #ececec;
+
+
+
+  label{
+    flex: 1 1 50%;
+  }
+
+  input[type='radio']{
+    display: none;
+
+    &:checked + label{
+      background-color: @green;
+      color: @whiteFont;
+    }
+  }
+}
+
+//modules
+@import 'content/hotOffer';
+@import 'content/community';
+@import 'content/price';
+@import 'content/feature';

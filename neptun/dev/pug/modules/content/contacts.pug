@@ -1,0 +1,34 @@
+//begin contacts.section
+.contacts.section
+  .wrapper
+    .section__header
+      .section__title.section__title-dark Контакты
+    .contacts__content
+      .contacts__item
+        +icon('point')
+        .contacts__box
+          span.contacts__title Местоположение:
+          p.contacts__text МДЦ “Нептун”
+          p.contacts__text.contacts__text-small Санкт-Петербург, наб. Обводного канала, 93-а
+      .contacts__item
+        +icon('phone')
+        .contacts__box
+          span.contacts__title Телефон:
+          p.contacts__text
+            a(href='tel:+78123244696').contacts__phone +7 (812) 324-46-96
+          p.contacts__text
+            a(href='tel:+78123244696').contacts__phone +7 (812) 324-46-96
+      .contacts__item
+        +icon('mail')
+        .contacts__box
+          span.contacts__title E-mail:
+          p.contacts__text
+            a(href='mailto:sport@mail.ru') sport@neptun.spb.ru
+      .contacts__item
+        +icon('vk')
+        .contacts__box
+          span.contacts__title Группа ВКонтакте:
+          p.contacts__text
+            a(href='javascript:void(0);') vk.com/sport_neptun
+
+//end contacts.section

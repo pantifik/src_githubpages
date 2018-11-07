@@ -1,0 +1,42 @@
+/***** begin advantages *****/
+.advantages{
+
+  &__content{
+    margin-top: 85px;
+    .row-flex();
+    justify-content: center;
+  }
+
+  &__item{
+    margin-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .col();
+    .size(4);
+    .size-md(6);
+    text-align: center;
+  }
+
+  &__img{
+    width: 105px;
+    height: 105px;
+    margin-bottom: 40px;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+  }
+
+  &__text{
+    .sm(font-size, 13px);
+    a{
+      color: #0066b3;
+      &:active{
+        color: #0086EB;
+      }
+      &:hover{
+        color: #0086EB;
+      }
+    }
+  }
+}
+/***** end advantages *****/

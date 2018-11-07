@@ -1,0 +1,7 @@
+mixin icon(name, className)
+  if className
+    svg(class= className + ' icon icon-' + name)
+      use(xlink:href="img/svg/symbol/sprite.svg#" + name)
+  else
+    svg(class= 'icon icon-' + name)
+      use(xlink:href="img/svg/symbol/sprite.svg#" + name)

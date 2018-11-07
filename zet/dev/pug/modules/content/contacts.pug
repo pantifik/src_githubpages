@@ -1,0 +1,30 @@
+//begin contacts
+#contacts.contacts
+  .contacts__left
+    //iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A63b00d30c1e171c7c6aef0b1fd4f874916e09960e64348dc31616c7170145f43&amp;source=constructor" width="100%" height="100%" frameborder="0")
+    #map(style="width:100%;height:100%")
+  .contacts__right(style='background-image: linear-gradient(to top, rgba(71, 83,97, .7), rgba(71, 83,97, .7)), url(img/general/form.png);')
+    //begin form
+    form.form
+      .form__row
+        label Name
+        .form__field
+          input(type='text')
+      .form__row
+        label Email
+        .form__field
+          input(type='text')
+      .form__row
+        label Phone
+        .form__field
+          input(type='text')
+      .form__row
+        label Message
+        .form__field
+          textarea
+      .form__row
+        button(type='button').form__btn Submit
+    //end form
+
+
+//end contacts

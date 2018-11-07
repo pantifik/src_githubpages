@@ -1,0 +1,58 @@
+.community{
+  background-color: #ececec;
+
+  .container{
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .section__header{
+    margin-bottom: 50px;
+  }
+
+  &__card{
+    display: flex;
+    justify-content: center;
+    &:before{
+      align-self: center;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: '\f2f6';
+
+      font-size: 5rem;
+      line-height: 3.75rem;
+      color: @green;
+
+    }
+  }
+
+  .switcher{
+
+    &__container{
+      flex: 1 1 33.33%;
+    }
+
+    i{
+      display: block;
+      box-sizing: content-box;
+      width: 3.75rem;
+
+      margin: 0 auto;
+
+      font-size: 1rem;
+      line-height: 3.75rem;
+      color: @green;
+
+      border: 1px solid @green;
+      border-radius: 50%;
+
+      background-color: @white;
+    }
+
+    input[type='radio']:checked + i{
+      background-color: @green;
+      color: @whiteFont;
+    }
+  }
+}
+

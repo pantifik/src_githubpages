@@ -1,0 +1,25 @@
+- var ql = ['power by desktop', 'mobile', 'see all downloads', 'power by desktop', 'mobile', 'see all downloads'];
+- var legal = ['privacy & cookies', 'terms of use', 'trademarks'];
+- var info = ['support', 'developers', 'blog', 'newsletter', 'pyramid analytics'];
+
+footer.footer
+  .wrapper
+    .footer__top
+      .footer__newsletter
+        .container
+          .footer__header.menu__header Newsletter
+          p.footer__text Insights await in your company's data. Bring them into focus with BlueLance.
+          form.form
+          .form__container
+            input.form__input(placeholder='enter your email')
+            button.form__btn(type='submit')
+              i.fas.fa-angle-right
+      +menu('Quck Links', ql)
+      +menu('legal', legal)
+      +menu('information', info)
+    .footer__bottom
+      .logo
+        a(href='javascritp:void(0);') craft_lance
+      .copyright
+        p © Designed by Moin Khan. All Rights Reserved.
+        p Made by BlueLance

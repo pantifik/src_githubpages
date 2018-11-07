@@ -1,0 +1,109 @@
+// begin reviews
+.reviews{
+  .slick-slider{
+    margin-bottom: 35px;
+  }
+
+  .slick-track{
+    display: flex;
+  }
+  .slick-slide{
+    height: inherit;
+  }
+}
+
+.review{
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+
+  align-items: center;
+
+  font-family: @oSansReg;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+
+  &__desc{
+    position: relative;
+    padding-bottom: 70px;
+    margin-bottom: auto;
+
+    &:after{
+      position: absolute;
+      bottom: 35px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      content: '';
+      display: block;
+
+      width: 15px;
+      height: 15px;
+
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMi41IDUxMi41IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIuNSA1MTIuNTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnIHRyYW5zZm9ybT0ibWF0cml4KC0xLCAxLjIyNDY1ZS0xNiwgLTEuMjI0NjVlLTE2LCAtMSwgNTEyLjUsIDUxMi41KSI+PGc+Cgk8cGF0aCBkPSJNMTEyLjUsMjA4LjI1YzYxLjg1NiwwLDExMiw1MC4xNDUsMTEyLDExMnMtNTAuMTQ0LDExMi0xMTIsMTEycy0xMTItNTAuMTQ1LTExMi0xMTJsLTAuNS0xNiAgIGMwLTEyMy43MTIsMTAwLjI4OC0yMjQsMjI0LTIyNHY2NGMtNDIuNzM3LDAtODIuOTE3LDE2LjY0My0xMTMuMTM3LDQ2Ljg2M2MtNS44MTcsNS44MTgtMTEuMTI2LDEyLjAwOC0xNS45MTUsMTguNTEgICBDMTAwLjY2NywyMDguNzIzLDEwNi41MjgsMjA4LjI1LDExMi41LDIwOC4yNXogTTQwMC41LDIwOC4yNWM2MS44NTUsMCwxMTIsNTAuMTQ1LDExMiwxMTJzLTUwLjE0NSwxMTItMTEyLDExMiAgIHMtMTEyLTUwLjE0NS0xMTItMTEybC0wLjUtMTZjMC0xMjMuNzEyLDEwMC4yODctMjI0LDIyNC0yMjR2NjRjLTQyLjczNiwwLTgyLjkxOCwxNi42NDMtMTEzLjEzNyw0Ni44NjMgICBjLTUuODE4LDUuODE4LTExLjEyNywxMi4wMDgtMTUuOTE2LDE4LjUxQzM4OC42NjYsMjA4LjcyMywzOTQuNTI3LDIwOC4yNSw0MDAuNSwyMDguMjV6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiMyQjM3NDYiIGRhdGEtb2xkX2NvbG9yPSIjMmIzNzQ2Ij48L3BhdGg+CjwvZz48L2c+IDwvc3ZnPg==);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+  }
+
+  &__authorPhoto{
+    width: 65px;
+    height: 65px;
+    margin-bottom: 15px;
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+
+    border-radius: 50%;
+  }
+
+  &__authorName{
+     font-family: @motBold;
+     font-size: 15px;
+  }
+
+  &__authorProf{
+     font-family: @motReg;
+     font-size: 13px;
+  }
+}
+
+
+
+.slider__dots{
+  display: flex;
+  justify-content: center;
+  li{
+    margin-right: 5px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+.slider__dot{
+  display: block;
+
+  width: 15px;
+  height: 15px;
+
+  background-color: @white;
+  border-radius: 50%;
+  border: 1px solid @dark;
+
+  cursor: pointer;
+}
+
+.slick-active{
+  .slider__dot{
+    background-color: @dark;
+  }
+}
+
+
+
+// end reviews

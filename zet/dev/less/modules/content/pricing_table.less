@@ -1,0 +1,118 @@
+// begin pricing_table
+.price{
+  &__content{
+    display: flex;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 90px;
+
+    .media(750px, {
+      flex-direction: column;
+    });
+  }
+}
+
+.offer{
+  position: relative;
+
+  flex: 1 1 33%;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  color: #485563;
+
+  border: 1px solid #eeeeee;
+
+  .media(750px, {
+    margin: 10px 20px;
+  });
+
+  &:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    content: '';
+
+    height: 0;
+    background-color: @dark;
+
+    .media(750px, {
+
+    });
+  }
+
+  &:hover{
+    margin-top: -40px;
+    padding-top: 40px;
+
+    .media(750px, {
+      margin-top: 10px;
+      padding-top: 0;
+    });
+
+    &:before{
+      height: 5px;
+      transition: .3s;
+    }
+
+    .offer__header{
+      color: @dark;
+      transition: .3s;
+    }
+  }
+
+  &__header{
+    margin-bottom: 45px;
+
+    padding: 30px 0;
+    border-bottom: 1px solid #eeeeee;
+
+  }
+
+  &__title{
+    margin-bottom: 25px;
+
+    font-family: @motBold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: capitalize;
+  }
+
+  &__price{
+    span{
+      display: block;
+      &:first-child{
+        font-size: 45px;
+        font-weight: bold;
+      }
+      &:last-child{
+        font-family: @oSansLight;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__desc{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 30px;
+    padding-right: 80px;
+    padding-left: 80px;
+    line-height: 40px;
+
+    .media(1000px, {
+      padding-right: 20px;
+      padding-left: 20px;
+    })
+  }
+
+  &__button{
+    align-self: center;
+    margin-bottom: 35px;
+  }
+}
+// end pricing_table

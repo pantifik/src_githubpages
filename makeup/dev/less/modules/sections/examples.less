@@ -1,0 +1,65 @@
+/***** begin examples *****/
+.examples{
+  background-color: #f2e8e8;
+  position: relative;
+
+  .wrapper{
+    position: relative;
+    z-index: 10;
+  }
+
+  .section__content{
+    .row-flex();
+  }
+
+  .card{
+    .col();
+    .size(6);
+    .size-sm(12);
+
+    border-bottom: 1px solid #be6563;
+
+    .media(@break_sm, {
+      border-bottom: 0px solid #be6563;
+    })
+
+  }
+
+  .btn{
+    margin: 30px 0;
+  }
+
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(120%);
+    display: block;
+    width: 770px;
+    height: 140px;
+    background-image: url(../img/content/bgImage__top.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    .media(1000px, { display: none;
+    })
+  }
+  &:after{
+    .media(1000px, { display: none;
+    });
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-120%);
+    display: block;
+    width: 770px;
+    height: 140px;
+    background-image: url(../img/content/bgImage__bottom.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+}
+/***** end examples *****/

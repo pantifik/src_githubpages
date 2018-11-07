@@ -1,0 +1,80 @@
+/***** begin offer *****/
+.offer{
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__content{
+    .row-flex();
+    align-items: center;
+  }
+
+  &__text, &__form{
+    .col();
+    .size(6);
+    .size-md(12);
+
+    display: flex;
+  }
+
+  &__form{
+    .media(320px, {
+      justify-content: space-between;
+    })
+  }
+
+  &__text{
+    align-items: center;
+
+    font-family: @osBold;
+    text-align: center;
+    color: #94d1ff;
+
+    .md(margin-bottom, 35px);
+  }
+
+  &__item{
+    .col();
+    .size(4);
+    .media(400px,{
+      span:first-child{
+        font-size: 40px;
+      }
+      font-size: 14px;
+      margin-left: 0;
+      width: auto;
+    });
+  }
+
+  &__button{
+    padding: 15px 0;
+    .col();
+    .size(4);
+    .size-sm(6);
+    .media(320px, {
+      margin-right: 0;
+    })
+  }
+
+  &__input{
+    .col();
+    .size(8);
+    .size-sm(6);
+
+    padding: 0 15px;
+
+    font-size: 16px;
+
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  &__button, &__input{
+    .media(320px, {
+      font-size: 14px;
+      margin-left: 0;
+    })
+  }
+
+}
+/***** end offer *****/

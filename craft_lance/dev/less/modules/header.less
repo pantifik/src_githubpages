@@ -1,0 +1,100 @@
+.siteHeader{
+  box-shadow: 0 5px 10px -5px rgba(50, 50, 50, 0.75);//TODO невидно тени
+  &__contacts{
+    background-color: @black;
+
+    a{
+      color: @white;
+      line-height: 2.375rem;
+    }
+
+    .wrapper{
+      padding-top: 15px;
+      padding-bottom: 15px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__phone,
+  &__email{
+    font-family: @rl;
+
+    &:before{
+      margin-right: 10px;
+    }
+  }
+
+  &__phone{
+    font-weight: 400;
+    margin-right: 35px;
+
+    &:before{
+      display: inline-block;
+      content:'\f095';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      transform: rotate(90deg);
+    }
+  }
+
+  &__email{
+    &:before{
+      content:'\f0e0';
+      font-family: 'Font Awesome 5 Free';
+      color: #ffffff;
+    }
+  }
+}
+
+.social{
+  flex: 1 1 auto;
+
+  &__item{
+    display: inline-block;
+    vertical-align: center;
+    margin-right: 10px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &__href{
+    display: block;
+  }
+}
+
+.mainHeader{
+  background-color: @white;
+
+  .wrapper{
+    display: flex;
+    align-items: center;
+  }
+
+  .logo{
+    flex: 1 1 auto;
+
+    a{
+      font-size: 1.875rem;
+      line-height: 3.75rem;
+    }
+  }
+}
+
+.nav{
+  &__item{
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__href{
+    display: block;
+    padding: 0 1.25rem;
+
+    font-size: .875rem;
+    line-height: 2.43rem;
+    color: black;
+  }
+}

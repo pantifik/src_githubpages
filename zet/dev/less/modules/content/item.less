@@ -1,0 +1,49 @@
+// begin item
+.item{
+  flex-basis: 23%;
+  font-family: @oSansReg;
+  font-size: 14px;
+  color: @dark;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__img{
+    position: relative;
+
+    width: 120px;
+    height: 120px;
+
+    margin-bottom: 40px;
+
+    background: radial-gradient(ellipse,#485563, #29323c);
+
+    border-radius: 50%;
+
+    .icon{
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      fill: @light;
+    }
+  }
+
+  &__title{
+    margin-bottom: 30px;
+
+    font-family: @motBold;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: -.025em;
+  }
+
+  &__desc{
+    line-height: 22px;
+  }
+}
+// end item

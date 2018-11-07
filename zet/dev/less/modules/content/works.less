@@ -1,0 +1,58 @@
+// begin works
+.works{
+  padding-bottom: 0;
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  &__work{
+    position: relative;
+    flex-basis: 20%;
+    min-width: 230px;
+    height: 200px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+
+    .media(700px, {
+      margin:5px;
+    });
+
+    .media(500px, {
+      flex-basis: 80%
+    });
+    
+    &:hover{
+      .works__workMask{
+        display: flex;
+      }
+    }
+  }
+
+  &__workMask{
+    display: none;
+
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top:0;bottom:0;right: 0;left: 0;
+
+    color: @lightFont;
+
+    background-color: rgba(40,50,60, .7);
+  }
+
+  &__workTitle{
+    margin: auto;
+  }
+
+  &__workButton{
+    margin-bottom: 15px;
+  }
+}
+// end works

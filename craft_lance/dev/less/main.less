@@ -1,0 +1,95 @@
+@import 'utils/reset';
+@import 'utils/fontawesome/fontawesome';
+@import 'utils/fontawesome/fa-regular';
+@import 'utils/fontawesome/fa-brands';
+@import 'utils/fontawesome/fa-solid';
+@import 'utils/fonts';
+@import 'utils/vars';
+@import 'utils/mixins';
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-family: @rr;
+  font-size: 16px;
+}
+
+a{
+  font-family: @rr;
+  text-decoration: none;
+  color: @dark;
+}
+
+input,
+button{
+  outline: none;
+}
+
+ol{
+  counter-reset: myCounter;
+
+  font-family: @rl;
+  text-align: left;
+  color: @dark;
+
+  li{
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1.75rem;
+
+    &:before {
+      counter-increment: myCounter;
+      content: counter(myCounter) '.';
+      margin-right: 10px;
+    }
+  }
+}
+
+.wrapper{
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo{
+  a{
+    font-family: 'SansSerif';
+    text-transform: uppercase;
+    color: @darkFont;
+  }
+}
+
+.btn{
+  display: inline-block;
+  padding: 0 1.875rem;
+
+  font-family: @rr;
+  font-size: .625rem;
+  line-height: 1.875rem;
+  color: @dark;
+  text-transform: uppercase;
+
+  border: 1px solid #ececec;
+
+  &-green{
+    font-family: @rb;
+    color: @green;
+    text-transform: none;
+
+    border: 1px solid @green;
+    border-radius: 0.9375rem;
+  }
+
+  &:hover{
+    background-color: @green;
+    color: @white;
+  }
+}
+
+@import "modules/header";
+@import "modules/content";
+@import "modules/footer";
+@import "modules/adaptive";
